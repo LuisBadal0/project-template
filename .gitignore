@@ -1,0 +1,49 @@
+# Build output (release files go on GitHub Releases)
+dist/
+build/
+out/
+releases/
+*.zip
+*.exe
+*.msi
+*.xpi
+
+# Dependencies and environments
+node_modules/
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+target/
+
+# Secrets, account data and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*.json
+tokens*.json
+private/
+
+# Logs and caches
+*.log
+*.tmp
+.cache/
+coverage/
+
+# Editors and operating systems
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.lnk
+Thumbs.db
+.DS_Store
+
+# TODO: add the language's entries (https://github.com/github/gitignore)

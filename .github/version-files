@@ -1,0 +1,5 @@
+# Files that hold the project version, one per line. CI fails if they disagree.
+# Supported: VERSION, *.json ("version"), *.toml (version = "..."), *.py (__version__ = "...").
+# Examples: package.json, src-tauri/tauri.conf.json, src-tauri/Cargo.toml,
+#           pyproject.toml, src/app/__init__.py, manifest.json
+VERSION

@@ -1,0 +1,20 @@
+version: 2
+updates:
+  # Keeps the SHA-pinned actions in .github/workflows up to date.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # TODO: add the project's package manager, for example:
+  # - package-ecosystem: npm   # or pip, cargo, nuget
+  #   directory: /
+  #   schedule:
+  #     interval: monthly
+  #   commit-message:
+  #     prefix: chore
