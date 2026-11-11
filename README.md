@@ -9,7 +9,7 @@
 > 5. Add the language's entries to `.gitignore` and its package manager to `.github/dependabot.yml`.
 > 6. Apply the standard GitHub settings once: `pwsh .github/scripts/apply-github-settings.ps1`.
 >
-> Releases start at the first version above `0.0.0`: bump it in a PR, merge, and CI publishes `v<version>`.
+> Note user-facing changes under **Unreleased** in `CHANGELOG.md`. Releases start at the first version above `0.0.0`: when you want one, open a release PR as `CONTRIBUTING.md` describes, and merging it makes CI publish `v<version>`.
 
 TODO: One or two sentences saying what this does and who it is for.
 

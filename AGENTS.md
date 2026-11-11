@@ -6,9 +6,13 @@
   `docs/` plus a lowercase, hyphenated name. Keep one focused change per branch.
 - Open a pull request using the template (Changes, Checks, Version). Merge only
   when the owner asks; merges are squash merges.
-- A PR that changes what users get bumps the version in every file listed in
-  `.github/version-files` and ends its title with `(vX.Y.Z)`. Merging it
-  publishes the release.
+- Releases are batched. A PR that changes what users get adds a bullet under
+  **Unreleased** in `CHANGELOG.md` and keeps the version.
+- Release only when the owner asks: a release PR on `chore/release-x.y.z`,
+  titled `Release x.y.z (vx.y.z)`, bumps every file in `.github/version-files`
+  and renames **Unreleased** to `[x.y.z] - YYYY-MM-DD`, with a new, empty
+  **Unreleased** above it. Merging it publishes the release, with that section
+  as its notes.
 - Never commit secrets, account data or build output.
 
 ## Project
