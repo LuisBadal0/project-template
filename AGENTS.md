@@ -15,6 +15,21 @@
   as its notes.
 - Never commit secrets, account data or build output.
 
+## Verification
+
+- Before saying a change is done, use the `verify` skill
+  (`.claude/skills/verify/SKILL.md`): run the fast checks, then run the project
+  and use the change as a user would. Report what you ran and what it showed in
+  the PR's **Checks** section, including what was not verified.
+- Prefer tests that use the feature end to end. For code with clear rules
+  (parsing, encoding, money, migrations), add property tests.
+- Never skip a failing or flaky test, add sleeps, or retry until it passes. If
+  you cannot find the cause, say so.
+- A change never edits its own checks: do not change tests, CI, hooks or
+  `REVIEW.md` to make it pass. Changes to them get their own PR.
+- After three failed rounds of fixing the same problem, stop and ask the owner.
+- Reviews follow `REVIEW.md`.
+
 ## Project
 
 TODO: One paragraph on what this project is and how it is structured.

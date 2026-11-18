@@ -14,6 +14,14 @@ accounts or devices if that applies.
 
 TODO: The command that runs all checks. Run it before opening a pull request.
 
+## Verify
+
+Before opening a pull request, run the change as a user would and write what
+you ran and saw in **Checks**. For agents this is the `verify` skill in
+`.claude/skills/verify/`, and a hook (`.claude/hooks/run-checks.sh`) runs the
+fast checks whenever Claude finishes with uncommitted changes. Reviews follow
+[REVIEW.md](REVIEW.md); change it, tests, CI or hooks in their own pull request.
+
 ## Branches and pull requests
 
 - Branch from `main`: `feature/<name>`, `fix/<name>`, `chore/<name>` or
