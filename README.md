@@ -2,7 +2,7 @@
 
 > **Created from the template?** Work through this list, then delete this block.
 >
-> 1. Replace every `TODO` (`git grep -n TODO`) in this README, `CONTRIBUTING.md`, `AGENTS.md`, `REVIEW.md`, `.claude/` and `.github/workflows/ci.yml`. In `.claude/skills/verify/SKILL.md`, describe how to start the project and use it like a user; in `.claude/hooks/run-checks.sh`, set `CHECK_COMMAND` to the fast checks.
+> 1. Replace every `TODO` (`git grep -n TODO`) in this README, `CONTRIBUTING.md`, `AGENTS.md`, `REVIEW.md`, `.claude/` and `.github/workflows/ci.yml`. In `.claude/skills/verify/SKILL.md`, describe how to start the project and use it like a user; in `.claude/hooks/`, set `SETUP_COMMAND` (install dependencies), `FORMAT_COMMAND` (format one file) and `CHECK_COMMAND` (fast checks).
 > 2. Add a `LICENSE` file (MIT unless there's a reason to pick another).
 > 3. List each file that holds the version in `.github/version-files`. Delete `VERSION` if the project keeps its version elsewhere (`package.json`, `pyproject.toml`, `manifest.json`, ...).
 > 4. In `ci.yml`, replace the placeholder test and build steps. The build step puts the files to release in `dist/`.

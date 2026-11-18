@@ -21,6 +21,10 @@
   (`.claude/skills/verify/SKILL.md`): run the fast checks, then run the project
   and use the change as a user would. Report what you ran and what it showed in
   the PR's **Checks** section, including what was not verified.
+- Never say a check passed without running it in this session and showing
+  its output.
+- For a bug, first reproduce it with a test that fails, then fix it and show
+  the same test passing.
 - Prefer tests that use the feature end to end. For code with clear rules
   (parsing, encoding, money, migrations), add property tests.
 - Never skip a failing or flaky test, add sleeps, or retry until it passes. If
@@ -29,6 +33,10 @@
   `REVIEW.md` to make it pass. Changes to them get their own PR.
 - After three failed rounds of fixing the same problem, stop and ask the owner.
 - Reviews follow `REVIEW.md`.
+- Hooks in `.claude/settings.json` install dependencies when a session starts
+  (`.claude/hooks/setup.sh`), format each edited file (`format.sh`) and run the
+  fast checks before Claude stops (`run-checks.sh`). Reading secrets and
+  force-pushing are denied there.
 
 ## Project
 

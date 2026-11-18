@@ -28,6 +28,11 @@ Tag each finding:
 - **Nit**: optional improvement.
 - **Pre-existing**: a problem the change did not introduce.
 
+## Review rounds
+
+If a pull request reaches a third round of review on the same problems, stop
+listing findings and recommend rethinking the approach instead.
+
 ## Keep it short
 
 When a review misses a bug that later breaks something, add a rule above. Remove
